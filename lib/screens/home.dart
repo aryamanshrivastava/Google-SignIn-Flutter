@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text('Logged In'),
+          title: Text('Home', style: TextStyle(color: Colors.white)),
           centerTitle: true,
           actions: [
             TextButton(
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                       Provider.of<GoogleSignInProvider>(context, listen: false);
                   provider.logout();
                 },
-                child: Text('Logout'))
+                child: Icon(Icons.logout, color: Colors.white)),
           ],
         ),
         body: Container(
